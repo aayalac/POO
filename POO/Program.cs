@@ -4,15 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Circulo miCirculo; // Creacion de objeto de tipo Círculo. Variable / objeto de tipo círculo.
+           ConversorEuroDolar obj = new ConversorEuroDolar();
 
-            miCirculo = new Circulo(); // Iniciación de variable / objeto de tipo circulo. Instanciar una clase (instanciacion, ejemplarizacion, creacion de ejemplar de clase).
+            obj.CambiaValorEuro(1.5);
 
-            Console.WriteLine(miCirculo.calculoArea(5));
+           Console.WriteLine(obj.Convierte(50));
 
-            Circulo miCirculo2 = new Circulo();
-
-            Console.WriteLine(miCirculo2.calculoArea(9));
         }
     }
 }
