@@ -19,9 +19,13 @@
 
         Console.WriteLine(coche2.getInfoCoche());
 
-        // llamado al metodo
+        // llamado al metodo con sobrecarga
         Coche coche3 = new Coche(4500.25, 1200.35);    
-        Console.WriteLine(coche3.getInfoCoche()); 
+        Console.WriteLine(coche3.getInfoCoche());
+
+        // llama metodo setExtras
+        coche3.setExtras(true, "Cuero");
+        Console.WriteLine(coche3.getExtras());
         }
     }
 }

@@ -1,7 +1,19 @@
 ﻿namespace POO
 {
-    internal class Coche
+    class Coche
     {
+        public void setExtras(bool climatizador, string tapiceria)
+        {
+            this.climatizador = climatizador;
+
+            this.tapiceria = tapiceria;
+        }
+
+        public string getExtras()
+        {
+            return "Extras del cocche:\n" + "Tapiceria: " + tapiceria + " Climatizador: " + climatizador;
+        }
+
         private int ruedas;
 
         private double largo;
@@ -19,20 +31,24 @@
             largo = 2300.5;
 
             ancho = 0.800;
+
+            tapiceria = "Tela";
         }
 
-        public Coche(double largoCoche, double anchoCoche) // sobrecarga
+        public Coche(double largoCoche, double anchoCoche) // sobrecarga de constructores
         {
             ruedas = 4;
 
             largo = largoCoche;
 
             ancho = anchoCoche;
-        }
+
+            tapiceria = "Tela";
+        }        
 
         public string getInfoCoche()
         {
-            return "Informacion del coche:\n" + "Ruedas: " + ruedas + " " + "Largo: " + ruedas + " " + "Ancho: " + ancho;
-        }
+            return "Informacion del coche:\n" + "Ruedas: " + ruedas + " " + "Largo: " + largo + " " + "Ancho: " + ancho;
+        }        
     }
 }
