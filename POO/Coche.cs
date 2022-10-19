@@ -2,7 +2,7 @@
 {
     class Coche
     {
-        public void setExtras(bool climatizador, string tapiceria)
+        public void setExtras(bool climatizador, string tapiceria) // metodo para establecer los campos climatizador y tapiceria
         {
             this.climatizador = climatizador;
 
@@ -46,7 +46,7 @@
             tapiceria = "Tela";
         }        
 
-        public string getInfoCoche()
+        public string getInfoCoche() // metodo para cambiar los valores de ruedas, largo y ancho
         {
             return "Informacion del coche:\n" + "Ruedas: " + ruedas + " " + "Largo: " + largo + " " + "Ancho: " + ancho;
         }        
